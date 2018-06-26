@@ -2,7 +2,7 @@
   "name": "cm-chesstools",
   "version": "1.0.1",
   "description": "Some JavaScript tools for chess pages",
-  "main": "src/cm-chesstools/ChessRenderer.js",
+  "main": "src/cm-chesstools/ChessTools.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "node postinstall.js"
