@@ -1,0 +1,27 @@
+{
+  "name": "cm-chesstools",
+  "version": "1.0.0",
+  "description": "Some JavaScript tools for chess pages",
+  "main": "src/cm-chesstools",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node postinstall.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaack/cm-chesstools.git"
+  },
+  "keywords": [
+    "js",
+    "chess"
+  ],
+  "author": "https://shaack.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shaack/cm-chesstools/issues"
+  },
+  "homepage": "https://github.com/shaack/cm-chesstools#readme",
+  "dependencies": {
+    "svjs-utils": "^1.0.1"
+  }
+}
