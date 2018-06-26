@@ -17,9 +17,9 @@ export const PIECES = {
     rb: "♜", nb: "♞", bb: "♝", qb: "♛", kb: "♚", pb: "♟"
 };
 
-export default class ChessRenderer {
+export default class ChessTools {
 
-    static notationToFigures(san, ply) {
+    static renderSan(san, ply) {
         if (this.colorToMove(ply) === COLOR.white) {
             return Text.replaceAll(san, {"R": PIECES.rw, "N": PIECES.nw, "B": PIECES.bw, "Q": PIECES.qw, "K": PIECES.kw});
         } else {
