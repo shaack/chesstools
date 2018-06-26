@@ -17,7 +17,7 @@ export const PIECES = {
     rb: "♜", nb: "♞", bb: "♝", qb: "♛", kb: "♚", pb: "♟"
 };
 
-export default class ChessTools {
+export class ChessTools {
 
     static renderSan(san, ply) {
         if (this.colorToMove(ply) === COLOR.white) {
