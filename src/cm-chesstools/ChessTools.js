@@ -4,7 +4,7 @@
  * License: MIT, see file 'LICENSE'
  */
 
-import {Text} from "../svjs-utils/Text.js";
+import {Text} from "../../lib/svjs-utils/Text.js";
 
 
 export const COLOR = {

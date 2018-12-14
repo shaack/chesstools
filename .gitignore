@@ -1,5 +1,3 @@
 /node_modules
 /.idea
-/src/**
-!/src/cm-chesstools
-!/src/cm-chesstools/**
+/lib
