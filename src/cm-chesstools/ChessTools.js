@@ -4,7 +4,7 @@
  * License: MIT, see file 'LICENSE'
  */
 
-import {Text} from "../../lib/svjs-utils/Text.js";
+import {TextUtils} from "../../lib/cm-web-modules/utils/TextUtils.js";
 
 
 export const COLOR = {
@@ -21,9 +21,9 @@ export class ChessTools {
 
     static renderSan(san, ply) {
         if (this.colorToMove(ply) === COLOR.white) {
-            return Text.replaceAll(san, {"R": PIECES.rw, "N": PIECES.nw, "B": PIECES.bw, "Q": PIECES.qw, "K": PIECES.kw});
+            return TextUtils.replaceAll(san, {"R": PIECES.rw, "N": PIECES.nw, "B": PIECES.bw, "Q": PIECES.qw, "K": PIECES.kw});
         } else {
-            return Text.replaceAll(san, {"R": PIECES.rb, "N": PIECES.nb, "B": PIECES.bb, "Q": PIECES.qb, "K": PIECES.kb});
+            return TextUtils.replaceAll(san, {"R": PIECES.rb, "N": PIECES.nb, "B": PIECES.bb, "Q": PIECES.qb, "K": PIECES.kb});
         }
     }
 

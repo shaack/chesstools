@@ -1,5 +1,6 @@
 
-const WebModuleCurator = require("web-module-curator")
-const curator = new WebModuleCurator(__dirname)
+const LibraryManager = require("./node_modules/cm-web-modules/src/LibraryManager.js")
+const manager = new LibraryManager(__dirname)
 
-curator.addModule("svjs-utils")
+
+manager.addProject("cm-web-modules")

@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/shaack/cm-chesstools#readme",
   "dependencies": {
-    "svjs-utils": "^1.0.1",
-    "web-module-curator": "^1.1.3"
+    "cm-web-modules": "github:shaack/cm-web-modules"
   }
 }
