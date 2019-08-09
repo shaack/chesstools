@@ -1,6 +1,6 @@
 {
   "name": "cm-chesstools",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Some JavaScript tools for chess pages",
   "main": "src/cm-chesstools/ChessTools.js",
   "scripts": {
