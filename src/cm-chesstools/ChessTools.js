@@ -4,7 +4,7 @@
  * License: MIT, see file 'LICENSE'
  */
 
-import {TextUtils} from "../../lib/cm-web-modules/utils/TextUtils.js";
+import {TextUtils} from "../../lib/cm-web-modules/utils/TextUtils.js"
 
 
 export const COLOR = {
@@ -15,15 +15,29 @@ export const COLOR = {
 export const PIECES = {
     rw: "♖", nw: "♘", bw: "♗", qw: "♕", kw: "♔", pw: "♙",
     rb: "♜", nb: "♞", bb: "♝", qb: "♛", kb: "♚", pb: "♟"
-};
+}
 
 export class ChessTools {
-
-    static renderSan(san, ply) {
+    static renderSan(san, ply, pieces) {
+        if (!pieces) {
+            pieces = PIECES
+        }
         if (this.colorToMove(ply) === COLOR.white) {
-            return TextUtils.replaceAll(san, {"R": PIECES.rw, "N": PIECES.nw, "B": PIECES.bw, "Q": PIECES.qw, "K": PIECES.kw});
+            return TextUtils.replaceAll(san, {
+                "R": pieces.rw,
+                "N": pieces.nw,
+                "B": pieces.bw,
+                "Q": pieces.qw,
+                "K": pieces.kw
+            })
         } else {
-            return TextUtils.replaceAll(san, {"R": PIECES.rb, "N": PIECES.nb, "B": PIECES.bb, "Q": PIECES.qb, "K": PIECES.kb});
+            return TextUtils.replaceAll(san, {
+                "R": pieces.rb,
+                "N": pieces.nb,
+                "B": pieces.bb,
+                "Q": pieces.qb,
+                "K": pieces.kb
+            })
         }
     }
 
