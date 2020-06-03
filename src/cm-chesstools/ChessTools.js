@@ -48,9 +48,9 @@ export const PIECES = {
 
 export class ChessTools {
 
-    static renderSan(san, plyCount, lang = "en", mode = "text", pieces = PIECES.figures.utf8) {
+    static renderSan(san, color = COLOR.white, lang = "en", mode = "text", pieces = PIECES.figures.utf8) {
         if(mode === "figures") {
-            if (this.plyCountToColor(plyCount) === COLOR.white) {
+            if (color === COLOR.white) {
                 return TextUtils.replaceAll(san, {
                     "R": pieces.rw,
                     "N": pieces.nw,
@@ -68,7 +68,7 @@ export class ChessTools {
                 })
             }
         } else if(mode === "text") {
-            return TextUtils.replaceAll(san, PIECES.notation[lang])
+            return TextUtils.replaceAll(san, PIECES.notation[lang], true)
         } else {
             console.error("mode must be 'text' or 'figures'")
         }

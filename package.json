@@ -4,7 +4,7 @@
   "description": "Some JavaScript tools for chess pages",
   "main": "src/cm-chesstools/ChessTools.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --async-only --require babel-core/register ./test/*",
     "postinstall": "node postinstall.js"
   },
   "repository": {
@@ -23,5 +23,10 @@
   "homepage": "https://github.com/shaack/cm-chesstools#readme",
   "dependencies": {
     "cm-web-modules": "github:shaack/cm-web-modules"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "mocha": "^5.2.0"
   }
 }
