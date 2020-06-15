@@ -21,7 +21,7 @@ export const PIECES = {
             r: "R", n: "N", b: "B", q: "Q", k: "K", p: ""
         },
         de: {
-            r: "T", n: "S", b: "L", q: "Q", k: "K", p: ""
+            r: "T", n: "S", b: "L", q: "D", k: "K", p: ""
         }
     },
     figures: {
